@@ -261,6 +261,17 @@ void excCheck(){
     }
 }
 
+void InsertionSort(int arr[], int inSize){
+    for(int i=1;i< inSize;i++){
+        int element = arr[i];
+        int j=i=1;
+        while(j>=0 && arr[j] > element){
+            arr[j+1]=arr[j];
+            j--;
+        }
+        arr[j+1]= element;
+    }
+}
 
 
 void Check()
